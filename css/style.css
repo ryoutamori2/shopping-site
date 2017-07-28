@@ -106,16 +106,19 @@ header #header_inner {
   #main #pagelink .menu_toggle {
     background: #fff;
     list-style: none;
-    padding: 15px 10px 5px 20px;
     display: none;
     font-size: 12px;
     font-size: 1.2rem; }
-    #main #pagelink .menu_toggle a {
-      color: #000;
-      display: block;
-      text-decoration: none; }
-    #main #pagelink .menu_toggle .caret {
-      float: right; }
+    #main #pagelink .menu_toggle li {
+      border-bottom: 1px solid #f9f8f6;
+      margin-bottom: 0; }
+      #main #pagelink .menu_toggle li a {
+        color: #000;
+        display: block;
+        text-decoration: none;
+        padding: 15px 10px 10px 15px; }
+      #main #pagelink .menu_toggle li .caret {
+        float: right; }
 #main #categories {
   margin-bottom: 10px; }
   #main #categories .menu {
@@ -127,16 +130,19 @@ header #header_inner {
   #main #categories .menu_toggle {
     background: #fff;
     list-style: none;
-    padding: 15px 10px 5px 20px;
     display: none;
     font-size: 12px;
     font-size: 1.2rem; }
-    #main #categories .menu_toggle a {
-      color: #000;
-      display: block;
-      text-decoration: none; }
-    #main #categories .menu_toggle .caret {
-      float: right; }
+    #main #categories .menu_toggle li {
+      border-bottom: 1px solid #f9f8f6;
+      margin-bottom: 0; }
+      #main #categories .menu_toggle li a {
+        color: #000;
+        display: block;
+        text-decoration: none;
+        padding: 15px 10px 10px 15px; }
+      #main #categories .menu_toggle li .caret {
+        float: right; }
 #main .about_info {
   overflow: hidden;
   margin-bottom: 25px;
@@ -165,10 +171,12 @@ header #header_inner {
       margin: 2px; }
       #main .item .item_box .name {
         font-size: 12px;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        margin-bottom: 10px; }
       #main .item .item_box .price {
         font-size: 12px;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        margin-bottom: 10px; }
   #main .about_info_box {
     padding-left: 10px;
     padding-right: 10px; }
@@ -199,10 +207,12 @@ header #header_inner {
       box-sizing: border-box; }
       #main .item .item_box .name {
         font-size: 12px;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        margin-bottom: 10px; }
       #main .item .item_box .price {
         font-size: 12px;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        margin-bottom: 10px; }
   #main .guide {
     margin-left: 1%;
     display: -webkit-flex;
@@ -397,32 +407,33 @@ header #header_inner {
     #main .color_size tr .white_td {
       background: #fff;
       text-align: left; }
-      #main .color_size tr .white_td .input_checkbox {
-        display: none; }
-      #main .color_size tr .white_td .checkbox_text {
-        padding-left: 20px;
-        position: relative;
-        margin-right: 20px; }
-      #main .color_size tr .white_td .checkbox_text::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 19px;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #e8e4da; }
-      #main .color_size tr .white_td .input_checkbox:checked + .checkbox_text::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: -5px;
-        left: 24px;
-        width: 7px;
-        height: 14px;
-        transform: rotate(40deg);
-        border-bottom: 3px solid #887f69;
-        border-right: 3px solid #887f69; }
+      #main .color_size tr .white_td label {
+        position: relative; }
+        #main .color_size tr .white_td label .input_checkbox {
+          display: none; }
+        #main .color_size tr .white_td label .checkbox_text {
+          padding-left: 20px;
+          margin-right: 20px; }
+        #main .color_size tr .white_td label .checkbox_text::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 15%;
+          left: 36%;
+          width: 16px;
+          height: 16px;
+          border: 1px solid #e8e4da; }
+        #main .color_size tr .white_td label .input_checkbox:checked + .checkbox_text::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -5%;
+          left: 43%;
+          width: 7px;
+          height: 14px;
+          transform: rotate(40deg);
+          border-bottom: 3px solid #887f69;
+          border-right: 3px solid #887f69; }
   #main .price_Quantity .price {
     border-top: 1px solid #e8e4da;
     border-bottom: 1px solid #e8e4da;
@@ -552,32 +563,33 @@ header #header_inner {
       background: #fff;
       text-align: left;
       padding: 7px; }
-      #main .color_size tr .white_td .input_checkbox {
-        display: none; }
-      #main .color_size tr .white_td .checkbox_text {
-        padding-left: 20px;
-        position: relative;
-        margin-right: 20px; }
-      #main .color_size tr .white_td .checkbox_text::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 86px;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #e8e4da; }
-      #main .color_size tr .white_td .input_checkbox:checked + .checkbox_text::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: -5px;
-        left: 91px;
-        width: 7px;
-        height: 14px;
-        transform: rotate(40deg);
-        border-bottom: 3px solid #887f69;
-        border-right: 3px solid #887f69; }
+      #main .color_size tr .white_td label {
+        position: relative; }
+        #main .color_size tr .white_td label .input_checkbox {
+          display: none; }
+        #main .color_size tr .white_td label .checkbox_text {
+          padding-left: 20px;
+          margin-right: 20px; }
+        #main .color_size tr .white_td label .checkbox_text::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0%;
+          left: 45%;
+          width: 16px;
+          height: 16px;
+          border: 1px solid #e8e4da; }
+        #main .color_size tr .white_td label .input_checkbox:checked + .checkbox_text::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: -5%;
+          left: 48%;
+          width: 7px;
+          height: 14px;
+          transform: rotate(40deg);
+          border-bottom: 3px solid #887f69;
+          border-right: 3px solid #887f69; }
   #main .price_Quantity {
     float: left;
     width: 55%;

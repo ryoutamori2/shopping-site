@@ -193,18 +193,25 @@ header{
         .menu_toggle{
             background: #fff;
             list-style: none;
-            padding: 15px 10px 5px 20px;
             display: none;
             @include fontsize(12);
             
-            a{
+            li{
+                border-bottom: 1px solid #f9f8f6;
+                margin-bottom: 0;
+                
+                a{
                 color: #000;
                 display: block;
                 text-decoration: none;
-            }
-            .caret{
-                float: right;
-            }
+                padding: 15px 10px 10px 15px
+                }
+                
+                .caret{
+                    float: right;
+                }
+                
+            }//li
             
         }//.menu_toggle
         
@@ -227,18 +234,25 @@ header{
         .menu_toggle{
             background: #fff;
             list-style: none;
-            padding: 15px 10px 5px 20px;
             display: none;
             @include fontsize(12);
             
-            a{
+            li{
+                border-bottom: 1px solid #f9f8f6;
+                margin-bottom: 0;
+                
+                a{
                 color: #000;
                 display: block;
                 text-decoration: none;
-            }
-            .caret{
-                float: right;
-            }
+                padding: 15px 10px 10px 15px
+                }
+                
+                .caret{
+                    float: right;
+                }
+                
+            }//li
             
         }//.menu_toggle
     }
@@ -288,10 +302,12 @@ header{
                 
                 .name{
                     @include fontsize(12);
+                    margin-bottom: 10px;
                 }
                 
                 .price{
                     @include fontsize(12);
+                    margin-bottom: 10px;
                 }//.item
                 
             }//.item_box
@@ -342,10 +358,12 @@ header{
                 
                 .name{
                     @include fontsize(12);
+                    margin-bottom: 10px;
                 }
                 
                 .price{
                     @include fontsize(12);
+                    margin-bottom: 10px;
                 }
                 
             }//.item_box
@@ -678,44 +696,48 @@ header{
                     background: #fff;
                     text-align: left;
                     
-                    .input_checkbox{
+                    label{
+                        position: relative;
+                        
+                        .input_checkbox{
                         display: none;
                     }
                     
-                    .checkbox_text{
-                        padding-left: 20px;
-                        position:relative;
-                        margin-right: 20px;  
-                    }
+                        .checkbox_text{
+                            padding-left: 20px;
+                            margin-right: 20px;
+                        }
+                        
+                        .checkbox_text::before{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 15%;
+                            left: 36%;
+                            width: 16px;
+                            height: 16px;
+                            border: 1px solid #e8e4da;
+                        }
+                        
+                        // .input_checkbox:checked + .checkbox_text{
+                        //     color: $subcolor1;
+                        // }
+                        
+                        .input_checkbox:checked + .checkbox_text::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: -5%;
+                            left: 43%;
+                            width: 7px;
+                            height: 14px;
+                            transform: rotate(40deg);
+                            border-bottom: 3px solid $subcolor1;
+                            border-right: 3px solid $subcolor1;
+                        }
+                    }//label
                     
-                    .checkbox_text::before{
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        top: 0;
-                        left: 19px;
-                        width: 16px;
-                        height: 16px;
-                        border: 1px solid #e8e4da;
-                    }
-                    
-                    // .input_checkbox:checked + .checkbox_text{
-                    //     color: $subcolor1;
-                    // }
-                    
-                    .input_checkbox:checked + .checkbox_text::after{
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        top: -5px;
-                        left: 24px;
-                        width: 7px;
-                        height: 14px;
-                        transform: rotate(40deg);
-                        border-bottom: 3px solid $subcolor1;
-                        border-right: 3px solid $subcolor1;
-                    }
-               }
+               }//.white_td
                
             }//tr
             
@@ -905,44 +927,48 @@ header{
                     text-align: left;
                     padding: 7px;
                     
-                    .input_checkbox{
+                    label{
+                        position: relative;
+                        
+                        .input_checkbox{
                         display: none;
                     }
                     
-                    .checkbox_text{
-                        padding-left: 20px;
-                        position:relative;
-                        margin-right: 20px;  
-                    }
+                        .checkbox_text{
+                            padding-left: 20px;
+                            margin-right: 20px;
+                        }
+                        
+                        .checkbox_text::before{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 0%;
+                            left: 45%;
+                            width: 16px;
+                            height: 16px;
+                            border: 1px solid #e8e4da;
+                        }
+                        
+                        // .input_checkbox:checked + .checkbox_text{
+                        //     color: $subcolor1;
+                        // }
+                        
+                        .input_checkbox:checked + .checkbox_text::after{
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: -5%;
+                            left: 48%;
+                            width: 7px;
+                            height: 14px;
+                            transform: rotate(40deg);
+                            border-bottom: 3px solid $subcolor1;
+                            border-right: 3px solid $subcolor1;
+                        }
+                    }//label
                     
-                    .checkbox_text::before{
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        top: 0;
-                        left: 86px;
-                        width: 16px;
-                        height: 16px;
-                        border: 1px solid #e8e4da;
-                    }
-                    
-                    // .input_checkbox:checked + .checkbox_text{
-                    //     color: $subcolor1;
-                    // }
-                    
-                    .input_checkbox:checked + .checkbox_text::after{
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        top: -5px;
-                        left: 91px;
-                        width: 7px;
-                        height: 14px;
-                        transform: rotate(40deg);
-                        border-bottom: 3px solid $subcolor1;
-                        border-right: 3px solid $subcolor1;
-                    }
-               }
+               }//.white_td
                
             }//tr
             
