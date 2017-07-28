@@ -396,14 +396,16 @@ header #header_inner {
       font-size: 12px;
       font-size: 1.2rem;
       color: #887f69;
-      text-align: center; }
+      text-align: center;
+      padding: 0; }
     #main .color_size tr .center_right_td {
       border: 1px solid #e8e4da;
       width: 37%;
       font-size: 12px;
       font-size: 1.2rem;
       color: #887f69;
-      text-align: center; }
+      text-align: center;
+      padding: 10px; }
     #main .color_size tr .white_td {
       background: #fff;
       text-align: left; }
